@@ -5,6 +5,7 @@ max_attempts = 5
 # ── SETUP ──────────────────────────────────────────────────────
 count = 0
 guess = 0
+reamaining = 0
 
 print("=" * 42)
 print("        🎮  NUMBER GUESSING GAME")
@@ -14,6 +15,30 @@ print("You have 5 attempts to guess it.")
 print("After each wrong guess I will give you a hint.")
 print()
 
+while max_attempts > count and guess != 27:
+    guess = int(input("Guess the secret number")
+    max_attempts - 1
+    count + 1
+    print("❤️❤️❤️❤️")
+
+    if guess==27:
+        print("Well done! you guessed the number")
+                elif guess >= 20:
+                    print("Ice cold")
+                elif guess >= 10:
+                    print("Cold")
+                elif guess >= 5:
+                    print("Warm")
+                else:
+                    print("Hot")
+remaining = max_attempts - count
+if remaining > 0:
+    print("❤️")
+if guess != 27 and max_attempts < 0:
+    print("Game over!")
+                
+                
+    
 # ── MAIN GAME LOOP ─────────────────────────────────────────────
 # TODO: Write a while loop that keeps running as long as
 #       count is less than max_attempts AND guess is not equal to secret
